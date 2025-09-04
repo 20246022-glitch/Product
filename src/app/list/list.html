@@ -1,0 +1,30 @@
+<div class="table-responsive">
+  <table class="table table-hover table-striped align-middle">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Brand</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price (₱)</th>
+        <th scope="col">Description</th>
+        <th scope="col" class="text-center">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let lists of list; let i = index;">
+        <th scope="row">{{ lists.id }}</th>
+        <td>{{ lists.brand }}</td>
+        <td>{{ lists.name }}</td>
+        <td>{{ lists.price | number }}</td>
+        <td style="max-width: 350px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+          {{ lists.description }}
+        </td>
+        <td class="text-center">
+          <a class="btn btn-sm btn-outline-primary" [routerLink] = "['/detail',lists.id]">
+            View Details
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

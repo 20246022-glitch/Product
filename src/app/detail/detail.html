@@ -1,0 +1,35 @@
+<div *ngIf="lists" class="container mt-4">
+  <div class="table-responsive">
+    <table class="table table-hover table-striped align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th colspan="2" class="text-center">Product Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" style="width: 150px;">Brand</th>
+          <td>{{ lists.brand }}</td>
+        </tr>
+        <tr>
+          <th scope="row">Name</th>
+          <td>{{ lists.name }}</td>
+        </tr>
+        <tr>
+          <th scope="row">Price</th>
+          <td>{{ lists.price | currency:'PHP':'symbol':'1.0-0' }}</td>
+        </tr>
+        <tr>
+          <th scope="row">Description</th>
+          <td>{{ lists.description }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="text-center mt-3">
+    <a class="btn btn-sm btn-outline-secondary" routerLink="/list">
+      Go Back
+    </a>
+  </div>
+</div>

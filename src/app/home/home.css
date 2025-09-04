@@ -1,0 +1,31 @@
+.brand-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 1rem;
+  background: #fff;
+}
+
+.brand-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.brand-img {
+  height: 120px;
+  object-fit: contain;
+  padding: 10px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #eee;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+h1.fw-bold {
+  font-size: 2rem;
+  color: #333;
+}
+
+
+.lead {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
